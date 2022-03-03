@@ -1,4 +1,4 @@
-package com.webmusic.configuration;
+package com.webmusic.config;
 
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.web.access.AccessDeniedHandler;

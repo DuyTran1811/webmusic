@@ -1,4 +1,4 @@
-package com.webmusic.configuration;
+package com.webmusic.config;
 
 import com.webmusic.service.jwt.JwtService;
 import com.webmusic.service.user.UserService;

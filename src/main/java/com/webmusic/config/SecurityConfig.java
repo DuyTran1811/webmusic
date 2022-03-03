@@ -1,4 +1,4 @@
-package com.webmusic.configuration;
+package com.webmusic.config;
 
 import com.webmusic.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

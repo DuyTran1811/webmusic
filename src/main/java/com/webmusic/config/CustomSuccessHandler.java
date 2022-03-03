@@ -1,4 +1,4 @@
-package com.webmusic.configuration;
+package com.webmusic.config;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
