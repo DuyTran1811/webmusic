@@ -29,8 +29,8 @@ dependencies {
     runtimeOnly 'mysql:mysql-connector-java'
     annotationProcessor 'org.projectlombok:lombok'
     implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
-//    compile"org.springframework.boot:spring-boot-starter-tomcat"
-    compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+    compile"org.springframework.boot:spring-boot-starter-tomcat"
+//    compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
 
 
 }
