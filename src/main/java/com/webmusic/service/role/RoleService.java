@@ -1,7 +1,7 @@
 //package com.webmusic.service.role;
 //
 //import com.webmusic.model.Role;
-//import com.webmusic.repository.RoleRepository;
+//import com.webmusic.repository.security.RoleRepository;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.data.domain.Page;
 //import org.springframework.data.domain.Pageable;

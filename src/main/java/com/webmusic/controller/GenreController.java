@@ -28,6 +28,4 @@ public class GenreController {
     public ResponseEntity<List<Genre>> getAll() {
         return new ResponseEntity<>(genreService.getAll(),OK);
     }
-
-
 }
