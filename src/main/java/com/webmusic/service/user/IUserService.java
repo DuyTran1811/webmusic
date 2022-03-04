@@ -1,6 +1,6 @@
 package com.webmusic.service.user;
 
-import com.webmusic.model.User;
+import com.webmusic.model.security.User;
 import com.webmusic.service.IGeneral;
 import org.springframework.security.core.userdetails.UserDetailsService;
 

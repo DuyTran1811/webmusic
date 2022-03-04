@@ -1,18 +1,16 @@
 package com.webmusic.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.webmusic.model.security.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.util.Collection;
 import java.util.Date;
-import java.util.List;
 
 @Entity
 @Data

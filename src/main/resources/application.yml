@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: duytc
+    url: jdbc:mysql://localhost:3306/userdb?useSSL=false
+  jpa:
+    properties: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8080
+
+configJwt:
+  app:
+    jwtSecret: bezKoderSecretKey
+    jwtExpirationMs: 86400000

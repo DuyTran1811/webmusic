@@ -1,6 +1,7 @@
 package com.webmusic.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.webmusic.model.security.User;
 import lombok.Data;
 import org.springframework.stereotype.Service;
 

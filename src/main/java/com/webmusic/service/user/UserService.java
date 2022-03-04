@@ -1,8 +1,8 @@
 package com.webmusic.service.user;
 
-import com.webmusic.model.User;
+import com.webmusic.model.security.User;
 import com.webmusic.model.UserPrinciple;
-import com.webmusic.repository.UserRepository;
+import com.webmusic.repository.security.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

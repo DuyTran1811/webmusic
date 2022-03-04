@@ -1,8 +1,8 @@
 package com.webmusic.controller;
 
 import com.webmusic.model.*;
+import com.webmusic.model.security.User;
 import com.webmusic.service.like.song.ILikeSongService;
-import com.webmusic.service.like.song.LikeSongService;
 import com.webmusic.service.song.ISongService;
 import com.webmusic.service.user.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;

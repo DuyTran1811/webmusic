@@ -2,7 +2,7 @@ package com.webmusic.controller;
 
 import com.webmusic.model.LikePlayList;
 import com.webmusic.model.Playlist;
-import com.webmusic.model.User;
+import com.webmusic.model.security.User;
 import com.webmusic.service.like.playList.ILikePlayListService;
 import com.webmusic.service.playlist.IPlaylistService;
 import com.webmusic.service.user.IUserService;
