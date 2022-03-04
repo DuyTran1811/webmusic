@@ -8,11 +8,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.Date;
 
-@Data
-@Builder
-@Entity
-@AllArgsConstructor
-@NoArgsConstructor
+@Data @Builder @Entity @AllArgsConstructor @NoArgsConstructor
 @Table(name = "comments")
 public class Comment {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

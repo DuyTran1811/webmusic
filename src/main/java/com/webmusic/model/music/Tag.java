@@ -7,11 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Data
-@Builder
-@Entity
-@AllArgsConstructor
-@NoArgsConstructor
+@Data @Builder @Entity @AllArgsConstructor @NoArgsConstructor
 @Table(name = "tags")
 public class Tag {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

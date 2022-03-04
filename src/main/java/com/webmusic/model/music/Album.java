@@ -6,15 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.List;
-import java.util.Set;
 
-@Data
-@Builder
-@Entity
-@AllArgsConstructor
-@NoArgsConstructor
-@Table(name = "albums")
+@Data @Builder @Entity @AllArgsConstructor @NoArgsConstructor @Table(name = "albums")
 public class Album {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer albumId;
