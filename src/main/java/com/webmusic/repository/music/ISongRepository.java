@@ -1,4 +1,4 @@
-package com.webmusic.repository;
+package com.webmusic.repository.music;
 
 import com.webmusic.model.music.Song;
 import org.springframework.data.jpa.repository.JpaRepository;
