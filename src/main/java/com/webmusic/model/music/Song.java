@@ -1,15 +1,14 @@
 package com.webmusic.model.music;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
 import java.util.Set;
 
-@Data @Builder @Entity @AllArgsConstructor @NoArgsConstructor
+@Getter @Setter
+@Builder @Entity @AllArgsConstructor @NoArgsConstructor
 @Table(name = "songs")
 public class Song {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

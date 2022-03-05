@@ -11,6 +11,6 @@ import java.util.List;
 @Repository
 public interface ISongRepository extends JpaRepository<Song, Long> {
 
-    @Query(value = "SELECT s.* FROM Song s WHERE s.nameSinger=:?1", nativeQuery = true)
-    List<Song> searchBySinger(@Param("nameSinger") String singerName);
+    @Query("SELECT s FROM Song s WHERE s.nameSinger LIKE %:nameSinger%")
+    List<Song> searchBySinger(@Param("nameSinger") String nameSinger);
 }

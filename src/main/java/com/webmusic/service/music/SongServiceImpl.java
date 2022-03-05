@@ -16,7 +16,7 @@ public class SongServiceImpl {
     }
 
     public List<Song> searchBySinger(String singerName) {
-        if (singerName == null || singerName.equals(""))
+        if (singerName == null || singerName.equals(" "))
             throw new ResponseNotFoundException(String.format("singerName %s not found", singerName));
         return songRepository.searchBySinger(singerName);
     }

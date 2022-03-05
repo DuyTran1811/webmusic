@@ -24,7 +24,7 @@ public class SongController {
     }
 
 
-    @GetMapping("searchSinger/{name}")
+    @GetMapping("/searchSinger/{name}")
     public ResponseEntity<List<Song>> findBySinger(@PathVariable String name) {
         List<Song> listSinger = songService.searchBySinger(name);
         return ResponseEntity.ok(listSinger);

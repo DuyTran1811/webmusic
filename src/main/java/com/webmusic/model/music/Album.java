@@ -1,5 +1,6 @@
 package com.webmusic.model.music;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,5 +15,6 @@ public class Album {
     private String albumName;
     private String description;
     @ManyToOne @JoinColumn(name = "songs_id")
+    @JsonIgnore
     private Song song;
 }
