@@ -3,6 +3,7 @@ package com.webmusic.controller.music;
 import com.webmusic.model.music.Song;
 import com.webmusic.service.music.SongServiceImpl;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,6 +24,11 @@ public class SongController {
 //        this.iSingerService = iSingerService;
     }
 
+    @PostMapping("/addSong")
+    @PreAuthorize("hasRole('ROLE_USER')")
+    public ResponseEntity<?> addNewSong(@RequestBody Song song) {
+        return ResponseEntity.ok(songService.addNewSong(song));
+    }
 
     @GetMapping("/searchSinger/{name}")
     public ResponseEntity<List<Song>> findBySinger(@PathVariable String name) {
